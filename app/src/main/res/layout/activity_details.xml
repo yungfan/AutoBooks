@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_green"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/details_date"
+        style="@style/myDetailTextStyle"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="时间：2016/4/30"></TextView>
+
+    <TextView
+        android:id="@+id/details_event"
+        style="@style/myDetailTextStyle"
+
+        android:text="项目：保险费"></TextView>
+
+    <TextView
+        android:id="@+id/details_pay"
+        style="@style/myDetailTextStyle"
+        android:layout_width="match_parent"
+        android:text="付款方式：刷卡消费"></TextView>
+
+    <TextView
+        android:id="@+id/details_cost"
+        style="@style/myDetailTextStyle"
+        android:text="消费金额：0"></TextView>
+
+    <TextView
+        android:id="@+id/details_gls"
+        style="@style/myDetailTextStyle"
+        android:text="公里数：10000"></TextView>
+
+
+    <TextView
+        android:id="@+id/details_bz"
+        style="@style/myDetailTextStyle"
+        android:text="备注：买了保险"></TextView>
+</LinearLayout>
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/add_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize" />
+
+        <LinearLayout style="@style/myItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目名称: "
+                android:textColor="@color/material_green" />
+
+
+            <Button
+                android:id="@+id/add_event"
+                style="@style/addActivityStyle"
+                android:layout_marginRight="3px"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"></Button>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/must"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/myItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款方式: "
+                android:textColor="@color/material_green" />
+
+
+            <Button
+                android:id="@+id/add_pay"
+                style="@style/addActivityStyle"
+                android:layout_marginRight="3px"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"></Button>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/must"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/myItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费金额: "
+                android:textColor="@color/material_green" />
+
+
+            <EditText
+                android:id="@+id/add_cost"
+                style="@style/addActivityStyle"
+                android:layout_marginRight="3px"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"></EditText>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/must"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/myItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目前公里: "
+                android:textColor="@color/material_green" />
+
+
+            <EditText
+                android:id="@+id/add_gls"
+                style="@style/addActivityStyle"
+                android:layout_marginRight="27px"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"></EditText>
+        </LinearLayout>
+
+        <LinearLayout style="@style/myItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费备注: "
+                android:textColor="@color/material_green" />
+
+
+            <EditText
+                android:id="@+id/add_bz"
+                style="@style/addActivityStyle"
+                android:layout_marginRight="27px"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/myItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费日期: "
+
+                android:textColor="@color/material_green" />
+
+
+            <Button
+                android:id="@+id/add_date"
+                style="@style/addActivityStyle"
+                android:layout_marginRight="27px"
+                android:gravity="left|center_vertical"></Button>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_add_buttonHeight"
+            android:layout_margin="@dimen/activity_item_magin"
+            android:background="@drawable/btn_selector"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="18sp"></Button>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Activity标题-->
+    <string name="app_name">爱车账本</string>
+    <string name="main">账本</string>
+    <string name="selyear">选择年份</string>
+    <string name="add">添加</string>
+    <string name="update">更新</string>
+    <string name="details">消费详情</string>
+    <string name="about">关于</string>
+    <string name="splash">记录您爱车的每一笔花销</string>
+    <string name="splash_copyright">2016-2017 ©</string>
+
+    <string name="splash_intro">绿色、环保、无害</string>
+
+
+    <!--Main 菜单-->
+    <string name="menu_add">添加</string>
+    <string name="menu_statics">统计</string>
+    <string name="menu_import">从SD卡导入</string>
+    <string name="menu_export">导出至SD卡</string>
+    <string name="menu_about">关于</string>
+
+    <!--Add 按钮默认-->
+    <string name="event_default">加油费</string>
+    <string name="pay_default">现金</string>
+    <string name="choose">确定</string>
+
+    <!--Add Spinner-->
+    <string-array name="event">
+
+        <item>加油费</item>
+        <item>洗车费</item>
+        <item>停车费</item>
+        <item>过路费</item>
+        <item>保险费</item>
+        <item>违章费</item>
+        <item>保养费</item>
+        <item>修理费</item>
+        <item>装潢费</item>
+        <item>其他</item>
+
+    </string-array>
+    <!--Add Spinner-->
+    <string-array name="pay">
+
+        <item>现金</item>
+        <item>刷卡</item>
+
+    </string-array>
+    <!--Oil ListView-->
+    <!--Oil ListView-->
+
+    <!--About ListView-->
+    <string-array name="aboutItem">
+        <item>作者简介</item>
+        <item>新浪微博</item>
+        <item>简书博客</item>
+    </string-array>
+
+    <!--About ListView Item-->
+    <string name="jianshu">http://www.jianshu.com/users/ab557ce505cd/latest_articles</string>
+    <string name="weibo">http://weibo.com/2022372821/profile</string>
+    <string name="author">一名普通的高校计算机老师\n热爱 Android与iOS 开发\nE-mail：yungfan@163.com</string>
+    <string name="copyright">Copyright © YangFan. All Rights Reserved.</string>
+</resources>

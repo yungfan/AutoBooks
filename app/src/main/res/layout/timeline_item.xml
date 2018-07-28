@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--先是底部的菜单 这里有一个删除和一个更新-->
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_green"
+            android:gravity="center"
+            android:text="更新"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+
+    </LinearLayout>
+
+    <!--时间轴item-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="@color/material_green" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2016/12/27"
+                android:textColor="@color/material_green"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="@color/material_green" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/left"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加油费"
+                android:textColor="@color/material_green"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event"
+                android:layout_marginTop="5dp"
+
+                android:text="刷卡消费"
+                android:textColor="@color/material_green"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/cost"
+                android:text="100.00"
+                android:textColor="@color/material_green"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/arrow_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/left"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-3dp"
+            android:background="@color/material_green" />
+
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

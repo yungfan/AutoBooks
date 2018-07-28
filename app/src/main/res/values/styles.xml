@@ -1,0 +1,99 @@
+<resources>
+
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+
+    </style>
+    <!--AppBaseTheme 先去掉ActionBar colorPrimary 对应ActionBar的颜色 colorPrimary 对应ActionBar的颜色 colorAccent 对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色。-->
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 设置任状态栏和Toolbar的颜色-->
+        <item name="colorPrimary">@color/material_green</item>
+        <item name="colorPrimaryDark">@color/material_green</item>
+        <!-- 更改ToolBar右边三个小点的颜色-->
+        <item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+        <!-- 更改ToolBar溢出菜单样式-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!-- 控件默认的颜色，如EditText的下划线颜色-->
+        <item name="android:textColorSecondary">@color/material_dark_green</item>
+        <!-- 菜单的按钮文字颜色-->
+        <item name="android:textColor">@color/material_green</item>
+
+    </style>
+
+
+    <!-- 更改ToolBar右边三个小点的颜色-->
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@mipmap/more</item>
+    </style>
+
+
+    <!--溢出菜单样式 1与3无效 -->
+    <style name="ToolbarPopupTheme" parent="@style/AppBaseTheme">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <!--OverflowMenu位置 、背景颜色-->
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:dropDownHorizontalOffset">4dp</item>
+    </style>
+
+
+    <!--ListView的样式-->
+    <style name="myItemStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/activity_item_magin</item>
+        <item name="android:layout_marginRight">@dimen/activity_item_magin</item>
+        <item name="android:layout_marginTop">@dimen/activity_item_magin_top</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--浮动Activity的样式-->
+    <style name="Theme.Transparent" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!--浮动Activity的样式2-->
+    <style name="Theme.Transparent2" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="myDetailTextStyle">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <!--AddActivity界面的风格 -->
+    <style name="addActivityStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_add_buttonHeight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/btn_selector</item>
+
+    </style>
+
+
+</resources>
